@@ -4,6 +4,14 @@ type Token @entity {
   symbol: String!
   decimals: Int!
   totalSupply: BigInt!
+  holders: [Holder!]! @derivedFrom(field: "token")
+}
+
+type Holder @entity {
+  id: ID!
+  address: Bytes!
+  balance: BigInt!
+  token: Token!
 }
 
 type Transfer @entity {
@@ -13,6 +21,7 @@ type Transfer @entity {
   value: BigInt!
   timestamp: BigInt!
   block: BigInt!
+  token: Token!
 }
 
 type Approval @entity {
@@ -22,4 +31,12 @@ type Approval @entity {
   value: BigInt!
   timestamp: BigInt!
   block: BigInt!
+  token: Token!
+}
+
+type DailyVolume @entity {
+  id: ID!
+  date: String!
+  volume: BigInt!
+  token: Token!
 }

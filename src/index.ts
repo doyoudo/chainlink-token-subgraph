@@ -1,5 +1,4 @@
 import { ethers } from 'ethers';
-import axios from 'axios';
 
 const ETHERSCAN_API_KEY = 'IB1SGVHDQRNBUBYJ411ARMS2BRRZZGN31w';
 const SEPOLIA_RPC_URL = 'https://eth-sepolia.g.alchemy.com/v2/qCq0-jHSTNg66PeB94QMsG0yOa8k2JVP';

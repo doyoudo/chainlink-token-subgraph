@@ -22,7 +22,7 @@
 
 1. 克隆仓库：
    ```
-   git clone https://github.com/你的用户名/chainlink-token-subgraph.git
+   git clone https://github.com/doyoudo/chainlink-token-subgraph.git
    cd chainlink-token-subgraph   ```
 
 2. 安装依赖：
@@ -39,7 +39,7 @@
 
 5. 部署子图（需要先在The Graph上创建子图）：
    ```
-   graph deploy --product hosted-service 你的用户名/chainlink-token-subgraph   ```
+   graph deploy --studio demo   ```
 
 ## 项目结构
 
